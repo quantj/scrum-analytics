@@ -4,7 +4,7 @@ sources:
   - name: credly
     description: ""
     project: scrumcommunity
-    dataset: google_sheet_credly --this needs to match name in bigquery
+    dataset: google_sheets_credly --this needs to match name in bigquery
     loader: Fivetran
 
     tables:
