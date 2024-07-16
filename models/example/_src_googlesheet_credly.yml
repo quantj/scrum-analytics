@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: credly
+    description: ""
+    project: scrumcommunity
+    dataset: google_sheet_credly --this needs to match name in bigquery
+    loader: Fivetran
+
+    tables:
+      - name: credly_summary
