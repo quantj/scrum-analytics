@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: credly
+    description: ""
+    project: scrumcommunity
+    dataset: google_sheets_credly
+    loader: Fivetran
+
+    tables:
+      - name: credly_summary
