@@ -3,3 +3,26 @@
 target/
 dbt_packages/
 logs/
+dbt_modules/
+
+# virtual env
+venv/
+env/
+dbt-env/
+
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# vscode
+.vscode/
+
+# templates
+.dbt_coves/
+
