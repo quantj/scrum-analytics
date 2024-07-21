@@ -1,11 +1,12 @@
 version: 2
 
 sources:
-  - name: credly
-    description: ""
-    project: scrumcommunity
-    dataset: google_sheets_credly
+  - name: scrum_community
+    database: raw
+    description: Google sheets data ingested with Fivetran connector
+    project: scrum_community_raw
+    dataset: fivetran_google_sheets
     loader: Fivetran
 
     tables:
-      - name: credly_summary
+      - name: credly_scrap
