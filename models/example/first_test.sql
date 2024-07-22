@@ -1,6 +1,6 @@
 with
 source as (
-    select * from {{source('scrum_community', 'credly_test')}}
+    select * from {{source('scrum_community', 'credly_scrap')}}
 ),
 
 final as (

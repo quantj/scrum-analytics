@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: scrum_community
     description: Google sheets data ingested with Fivetran connector
-    project: scrum_community_raw
+    project: scrum-community-raw
     dataset: fivetran_google_sheets
     loader: Fivetran
 
