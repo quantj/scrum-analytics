@@ -9,4 +9,4 @@ sources:
 
     tables:
       - name: credly_scrap
-      - name: credly_test
+      
