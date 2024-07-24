@@ -2,8 +2,8 @@
 version: 2
 
 models:
-    - name: first_test
-      description: "A starter dbt model"
+    - name: stg_googlesheet_credly_quebec
+      description: "todo"
       columns:
           - name: primary key
             description: "The primary key for this table"
