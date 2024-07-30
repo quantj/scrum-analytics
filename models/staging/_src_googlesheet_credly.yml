@@ -1,12 +1,15 @@
 version: 2
 
 sources:
-  - name: scrum_community
+  - name: credly
     description: Google sheets data ingested with Fivetran connector
     project: scrum-community-raw
     dataset: fivetran_google_sheets
     loader: Fivetran
 
     tables:
-      - name: credly_scrap
+      - name: credly_scrape
+        description: "main directory results"
       
+      - name: credly_users_badges
+        description: "individual user's directory of badges"

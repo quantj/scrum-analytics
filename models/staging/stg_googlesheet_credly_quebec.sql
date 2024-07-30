@@ -1,6 +1,6 @@
 with
 source as (
-    select * from {{source('scrum_community', 'credly_scrap')}}
+    select * from {{source('credly', 'credly_scrape')}}
 ),
 
 final as (
@@ -9,7 +9,7 @@ final as (
         -- primary key
         _row as primary_key
 
-        , id
+        , cast(id as int) as id
         , first_name
         , middle_name
         , last_name
