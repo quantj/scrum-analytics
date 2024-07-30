@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('credly', 'credly_scrap') }}
+    select * from {{ source('credly', 'credly_scrape') }}
 
 ),
 
