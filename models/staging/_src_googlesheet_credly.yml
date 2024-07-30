@@ -9,7 +9,13 @@ sources:
 
     tables:
       - name: credly_scrape
-        description: "main directory results"
+        description: "main directory results from Quebec"
       
       - name: credly_users_badges
-        description: "individual user's directory of badges"
+        description: "individual user's directory of badges from Quebec"
+
+      - name: credly_ontario_scrape
+        description: "main directory results from Ontario"
+      
+      - name: credly_ontario_users_badges
+        description: "individual user's directory of badges from Ontario"

@@ -1,10 +1,11 @@
 with
 directory as (
-    select * from {{ ref('stg_credly__credly_scrape') }}
+    select * from {{ ref('int_union_scrape') }}
 ),
 users_badges as (
-    select * from {{ ref("stg_credly__credly_users_badges") }}
+    select * from {{ ref("int_union_users_badges") }}
 ),
+
 
 final as (
     select
@@ -19,8 +20,7 @@ final as (
     from directory as d
     left join users_badges
         on d.vanity_url = users_badges.earner_path
-
-
 )
+
 
 select * from final
