@@ -1,14 +1,60 @@
-
 version: 2
 
 models:
-    - name: stg_googlesheet_credly_quebec
-      description: "todo"
-      columns:
-          - name: primary key
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+  - name: stg_googlesheet_credly_quebec
+    description: ""
+    
+    columns:
+      - name: primary_key
+        description: ""
+        tests:
+          - unique
+          - not_null
 
+      - name: id
+        description: ""
 
+      - name: first_name
+        description: ""
+
+      - name: middle_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: role
+        description: ""
+
+      - name: location
+        description: ""
+
+      - name: badge_count
+        description: ""
+
+      - name: total_badge_count
+        description: ""
+
+      - name: highlighted_badge_name
+        description: ""
+
+      - name: highlighted_badge_date
+        description: ""
+
+      - name: highlighted_badge_issuer
+        description: ""
+
+      - name: most_recent_badge_name
+        description: ""
+
+      - name: most_recent_badge_date
+        description: ""
+
+      - name: most_recent_badge_issuer
+        description: ""
+
+      - name: vanity_url
+        description: ""
+
+      - name: _fivetran_synced
+        description: ""
