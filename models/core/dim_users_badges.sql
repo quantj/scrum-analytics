@@ -15,6 +15,8 @@ final as (
         distinct d.id as user_id,
         d.first_name,
         d.last_name,
+        d.vanity_url,
+        d.role,
         d.location,
         users_badges.badge_template_name as badge_name,
         users_badges.issued_at_date,
