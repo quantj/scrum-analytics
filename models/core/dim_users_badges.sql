@@ -14,7 +14,9 @@ final as (
     select
         distinct d.id as user_id,
         d.first_name,
+        CONCAT(SUBSTR(d.first_name, 1, 1), REPEAT('*', LENGTH(d.first_name) - 1)) AS masked_first_name,
         d.last_name,
+        CONCAT(SUBSTR(d.last_name, 1, 1), REPEAT('*', LENGTH(d.last_name) - 1)) AS masked_last_name,
         CONCAT('https://www.credly.com', d.vanity_url) as vanity_url,
         d.role,
         d.location,
