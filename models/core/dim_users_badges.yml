@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: dim_users_badges
+    description: ""
+    columns:
+
+-- https://hub.getdbt.com/dbt-labs/codegen/latest/
