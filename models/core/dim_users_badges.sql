@@ -5,14 +5,11 @@ directory as (
 users_badges as (
     select 
     *,
-    REGEXP_EXTRACT(issuer, r'issued by\s+([^},]+)') AS extracted_issuer,
-    REGEXP_EXTRACT(badge_template, r'earn_this_badge_url=([^,}]+)') AS extracted_earn_url,
-    REGEXP_EXTRACT(badge_template, r'url=([^,}]+)') AS extracted_url,
     CASE
-        WHEN REGEXP_EXTRACT(badge_template, r'earn_this_badge_url=([^,}]+)') IS NULL OR REGEXP_EXTRACT(badge_template, r'earn_this_badge_url=([^,}]+)') = 'null' THEN 
-        REGEXP_EXTRACT(badge_template, r'url=([^,}]+)')
+        WHEN earn_this_badge_url IS NULL OR earn_this_badge_url = 'null' THEN 
+        url
         ELSE 
-        REGEXP_EXTRACT(badge_template, r'earn_this_badge_url=([^,}]+)')
+        earn_this_badge_url
     END AS final_url
     from {{ ref("int_union_users_badges") }}
 ),
@@ -30,9 +27,9 @@ final as (
         d.location,
         users_badges.badge_template_name as badge_name,
         users_badges.issued_at_date,
-        users_badges.extracted_issuer AS issuer,
-        users_badges.extracted_earn_url as earned_url,
-        users_badges.extracted_url as url,
+        users_badges.issued_by,
+        users_badges.earn_this_badge_url,
+        users_badges.url,
         users_badges.final_url as final_url
 
 
