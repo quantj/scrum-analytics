@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: dim_users_badges
+    description: ""
+    columns:
+      - name: user_id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: masked_first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: masked_last_name
+        description: ""
+
+      - name: vanity_url
+        description: ""
+
+      - name: role
+        description: ""
+
+      - name: location
+        description: ""
+
+      - name: badge_name
+        description: ""
+
+      - name: issued_at_date
+        description: ""
+
+      - name: issuer
+        description: ""
+
+      - name: earned_url
+        description: ""
+
+      - name: url
+        description: ""
+
+      - name: final_url
+        description: ""

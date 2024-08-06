@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: stg_credly__credly_users_badges
+    description: ""
+    columns:
+      - name: _row
+        description: ""
+
+      - name: _fivetran_synced
+        description: ""
+
+      - name: accepted_at
+        description: ""
+
+      - name: badge_template
+        description: ""
+
+      - name: badge_template_name
+        description: ""
+
+      - name: earner_path
+        description: ""
+
+      - name: earner_photo_url
+        description: ""
+
+      - name: evidence
+        description: ""
+
+      - name: expires_at
+        description: ""
+
+      - name: expires_at_date
+        description: ""
+
+      - name: id
+        description: ""
+
+      - name: image
+        description: ""
+
+      - name: image_url
+        description: ""
+
+      - name: issued_at
+        description: ""
+
+      - name: issued_at_date
+        description: ""
+
+      - name: issued_to
+        description: ""
+
+      - name: issuer
+        description: ""
+
+      - name: last_updated_at
+        description: ""
+
+      - name: locale
+        description: ""
+
+      - name: public
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: translate_metadata
+        description: ""
+
+      - name: updated_at
+        description: ""
