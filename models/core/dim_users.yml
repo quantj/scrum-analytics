@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: ""
+    columns:
+      - name: user_id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: masked_first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: masked_last_name
+        description: ""
+
+      - name: role
+        description: ""
+
+      - name: location
+        description: ""
+
+      - name: vanity_url
+        description: ""
