@@ -31,8 +31,8 @@ final as (
         users_badges.badge_template_name as badge_name,
         users_badges.issued_at_date,
         users_badges.extracted_issuer AS issuer,
-        users_badges.extracted_url as earned_url,
-        users_badges.extracted_earn_url as url,
+        users_badges.extracted_earn_url as earned_url,
+        users_badges.extracted_url as url,
         users_badges.final_url as final_url
 
 
