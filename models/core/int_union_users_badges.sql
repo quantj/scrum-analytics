@@ -2,9 +2,10 @@ with final_users_badges as (
     {{ dbt_utils.union_relations(
         relations=[ref('stg_credly__credly_users_badges'), ref('stg_credly__credly_ontario_users_badges')]
     ) }}
-)
+),
 
-select
+final as 
+(select
     *,
     regexp_extract(badge_template, r'id=([a-zA-Z0-9-]+)') as badge_id,
     regexp_extract(badge_template, r'name=([^,}]+)') as name,
@@ -18,4 +19,7 @@ select
     regexp_extract(badge_template, r'global_activity_url=([^,}]+)') as global_activity_url,
     regexp_extract(badge_template, r'owner_vanity_slug=([^,}]+)') as owner_vanity_slug,
     regexp_extract(badge_template, r'vanity_slug=([^,}]+)') as vanity_slug
-from final_users_badges
+from final_users_badges)
+
+select * from final
+

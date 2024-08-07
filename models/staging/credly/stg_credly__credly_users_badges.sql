@@ -34,7 +34,6 @@ renamed as (
         updated_at
 
     from source
-
 )
 
 select * from renamed
