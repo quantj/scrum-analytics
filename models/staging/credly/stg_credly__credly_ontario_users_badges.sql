@@ -29,12 +29,11 @@ renamed as (
         last_updated_at,
         locale,
         public,
-        recommendations,
         state,
+        recommendations as translate_metadata,
         updated_at
 
     from source
-
 )
 
 select * from renamed
