@@ -6,6 +6,8 @@ models:
     columns:
       - name: _row
         description: ""
+        tests:
+            - not_null
 
       - name: _fivetran_synced
         description: ""

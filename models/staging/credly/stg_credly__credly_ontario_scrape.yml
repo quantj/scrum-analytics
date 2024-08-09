@@ -6,7 +6,10 @@ models:
     columns:
       - name: _row
         description: ""
-
+        tests:
+            - unique
+            - not_null
+            
       - name: _fivetran_synced
         description: ""
 
@@ -15,6 +18,8 @@ models:
 
       - name: first_name
         description: ""
+        tests:
+            - not_null
 
       - name: highlighted_badge_date
         description: ""
@@ -36,6 +41,8 @@ models:
 
       - name: last_name
         description: ""
+        tests:
+            - not_null
 
       - name: location
         description: ""
