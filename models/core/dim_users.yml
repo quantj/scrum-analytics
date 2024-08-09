@@ -9,15 +9,23 @@ models:
 
       - name: first_name
         description: ""
+        tests:
+            - not_null
 
       - name: masked_first_name
         description: ""
+        tests:
+            - not_null
 
       - name: last_name
         description: ""
+        tests:
+            - not_null
 
       - name: masked_last_name
         description: ""
+        tests:
+            - not_null
 
       - name: role
         description: ""
