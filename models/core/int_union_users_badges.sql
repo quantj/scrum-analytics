@@ -18,7 +18,7 @@ final as
     regexp_extract(badge_template, r'type_category=([^,}]+)') as type_category,
     regexp_extract(badge_template, r'global_activity_url=([^,}]+)') as global_activity_url,
     regexp_extract(badge_template, r'owner_vanity_slug=([^,}]+)') as owner_vanity_slug,
-    regexp_extract(badge_template, r'vanity_slug=([^,}]+)') as vanity_slug
+    regexp_extract(badge_template, r'\bvanity_slug=([^,}]+)') as vanity_slug
 from final_users_badges)
 
 select * from final
