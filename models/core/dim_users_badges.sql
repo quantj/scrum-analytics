@@ -38,5 +38,4 @@ final as (
         on d.vanity_url = users_badges.earner_path
 )
 
-
 select * from final
