@@ -19,3 +19,12 @@ sources:
       
       - name: credly_ontario_users_badges
         description: "individual user's directory of badges from Ontario"
+
+      - name: credly_scrum_badges_ontario
+        description: ""
+      - name: credly_scrum_badges_quebec
+        description: ""
+      - name: credly_scrum_summary_ontario
+        description: ""
+      - name: credly_scrum_summary_quebec
+        description: ""
