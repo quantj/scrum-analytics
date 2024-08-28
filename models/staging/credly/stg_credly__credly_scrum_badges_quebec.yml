@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: stg_credly__credly_scrum_badges_quebec
+    description: ""
+    columns:
+      - name: earner_photo_url
+        description: ""
+
+      - name: expires_at_date
+        description: ""
+
+      - name: badge_template_description
+        description: ""
+
+      - name: issued_at_date
+        description: ""
+
+      - name: issued_to
+        description: ""
+
+      - name: earner_path
+        description: ""
+
+      - name: locale
+        description: ""
+
+      - name: accepted_at
+        description: ""
+
+      - name: issued_at
+        description: ""
+
+      - name: issuer_summary
+        description: ""
+
+      - name: translate_metadata
+        description: ""
+
+      - name: _fivetran_synced
+        description: ""
+
+      - name: expires_at
+        description: ""
+
+      - name: public
+        description: ""
+
+      - name: updated_at
+        description: ""
+
+      - name: last_updated_at
+        description: ""
+
+      - name: _row
+        description: ""
+
+      - name: id
+        description: ""
+
+      - name: state
+        description: ""
+
+      - name: badge_template_name
+        description: ""

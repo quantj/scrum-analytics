@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: stg_credly__credly_scrum_summary_ontario
+    description: ""
+    columns:
+      - name: most_recent_badge_name
+        description: ""
+
+      - name: role
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: full_vanity_url
+        description: ""
+
+      - name: middle_name
+        description: ""
+
+      - name: most_recent_badge_issuer
+        description: ""
+
+      - name: skills
+        description: ""
+
+      - name: highlighted_badge_id
+        description: ""
+
+      - name: _fivetran_synced
+        description: ""
+
+      - name: highlighted_badge_issuer
+        description: ""
+
+      - name: total_badge_count
+        description: ""
+
+      - name: _row
+        description: ""
+
+      - name: issuer_count
+        description: ""
+
+      - name: location
+        description: ""
+
+      - name: id
+        description: ""
+
+      - name: most_recent_badge_date
+        description: ""
+
+      - name: vanity_url
+        description: ""
+
+      - name: highlighted_badge_date
+        description: ""
+
+      - name: most_recent_badge_id
+        description: ""
+
+      - name: first_name
+        description: ""
+
+      - name: highlighted_badge_name
+        description: ""
+
+      - name: badge_count
+        description: ""
