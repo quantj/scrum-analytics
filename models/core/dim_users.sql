@@ -1,31 +1,22 @@
 with
-directory as (
-    select * from {{ ref('int_union_scrape') }}
-),
-users_badges as (
-    select 
-    *,
-    REGEXP_EXTRACT(issuer, r'issued by\s+([^},]+)') AS extracted_issuer
-    from {{ ref("int_union_users_badges") }}
+summary as (
+    select * from {{ ref('int_union_scrum_summary') }}
 ),
 
 
 final as (
     select
-        distinct REPLACE(d.vanity_url, '/users/', '') as user_id,
-        d.first_name,
-        CONCAT(SUBSTR(d.first_name, 1, 1), REPEAT('*', LENGTH(d.first_name) - 1)) AS masked_first_name,
-        d.last_name,
-        CONCAT(SUBSTR(d.last_name, 1, 1), REPEAT('*', LENGTH(d.last_name) - 1)) AS masked_last_name,
-        d.role,
-        d.location,
-        CONCAT('https://www.credly.com', d.vanity_url) as vanity_url
+        distinct REPLACE(vanity_url, '/users/', '') as user_id,
+        first_name,
+        CONCAT(SUBSTR(first_name, 1, 1), REPEAT('*', LENGTH(first_name) - 1)) AS masked_first_name,
+        last_name,
+        CONCAT(SUBSTR(last_name, 1, 1), REPEAT('*', LENGTH(last_name) - 1)) AS masked_last_name,
+        role,
+        location,
+        CONCAT('https://www.credly.com', vanity_url) as vanity_url
 
 
-    from directory as d
-    left join users_badges
-        on d.vanity_url = users_badges.earner_path
+    from summary
 )
-
 
 select * from final
