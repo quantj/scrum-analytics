@@ -60,3 +60,15 @@ models:
 
       - name: badge_template_name
         description: ""
+
+      - name: badge_url
+        description: ""
+
+      - name: cost
+        description: ""
+
+      - name: badge_image_url
+        description: ""
+
+      - name: earn_this_badge_url
+        description: ""
