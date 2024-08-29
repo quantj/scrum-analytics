@@ -34,9 +34,6 @@ models:
       - name: issuer_summary
         description: ""
 
-      - name: translate_metadata
-        description: ""
-
       - name: _fivetran_synced
         description: ""
 
@@ -62,4 +59,16 @@ models:
         description: ""
 
       - name: badge_template_name
+        description: ""
+
+      - name: badge_url
+        description: ""
+
+      - name: cost
+        description: ""
+
+      - name: badge_image_url
+        description: ""
+
+      - name: earn_this_badge_url
         description: ""
