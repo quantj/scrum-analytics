@@ -21,12 +21,12 @@ renamed as (
 
         , INITCAP(location) as location
 
-        , INITCAP(most_recent_badge_name) as most_recent_badge_name
+        , most_recent_badge_name
         , most_recent_badge_id
         , INITCAP(most_recent_badge_issuer) as most_recent_badge_issuer
         , most_recent_badge_date
 
-        , INITCAP(highlighted_badge_name) as highlighted_badge_name
+        , highlighted_badge_name
         , highlighted_badge_id
         , INITCAP(highlighted_badge_issuer) as highlighted_badge_issuer
         , highlighted_badge_date

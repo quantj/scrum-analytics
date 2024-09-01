@@ -28,7 +28,7 @@ renamed as (
         , updated_at
         , last_updated_at
         , state
-        , INITCAP(badge_template_name) as badge_template_name
+        , badge_template_name
         , badge_url
         , cost
         , badge_image_url
