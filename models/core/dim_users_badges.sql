@@ -26,6 +26,7 @@ final as (
     from summary
     left join scrum_badges
         on summary.vanity_url = scrum_badges.earner_path
+    order by issued_at_date desc
 )
 
 select * from final
