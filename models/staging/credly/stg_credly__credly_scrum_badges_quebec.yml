@@ -21,6 +21,8 @@ models:
 
       - name: earner_path
         description: ""
+        tests:
+          - not_null
 
       - name: locale
         description: ""
@@ -60,6 +62,8 @@ models:
 
       - name: badge_template_name
         description: ""
+        tests:
+          - not_null
 
       - name: badge_url
         description: ""
