@@ -5,6 +5,10 @@ sources:
     description: Google sheets data ingested with Fivetran connector
     project: scrum-community-raw
     dataset: fivetran_google_sheets
+    freshness: # default freshness
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+    loaded_at_field: _etl_loaded_at
     loader: Fivetran
 
     tables:
