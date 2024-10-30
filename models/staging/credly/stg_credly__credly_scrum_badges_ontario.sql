@@ -17,7 +17,7 @@ renamed as (
         , expires_at_date
         , badge_template_description
         , issued_at_date
-        , INITCAP(issued_to) as issued_to
+        , {{ title_case('issued_to') }} as issued_to
         , earner_path
         , locale
         , accepted_at

@@ -13,22 +13,22 @@ renamed as (
         , _fivetran_synced
 
         , id
-        , INITCAP(first_name) as first_name
-        , INITCAP(middle_name) as middle_name
-        , INITCAP(last_name) as last_name
-        , INITCAP(role) as role
-        , INITCAP(skills) as skills
+        , {{ title_case('first_name') }} as first_name
+        , {{ title_case('middle_name') }} as middle_name
+        , {{ title_case('last_name') }} as last_name
+        , {{ title_case('role') }} as role
+        , {{ title_case('skills') }} as skills
 
-        , INITCAP(location) as location
+        , {{ title_case('location') }} as location
 
         , most_recent_badge_name
         , most_recent_badge_id
-        , INITCAP(most_recent_badge_issuer) as most_recent_badge_issuer
+        , {{ title_case('most_recent_badge_issuer') }} as most_recent_badge_issuer
         , most_recent_badge_date
 
         , highlighted_badge_name
         , highlighted_badge_id
-        , INITCAP(highlighted_badge_issuer) as highlighted_badge_issuer
+        , {{ title_case('highlighted_badge_issuer') }} as highlighted_badge_issuer
         , highlighted_badge_date
 
         , issuer_count
