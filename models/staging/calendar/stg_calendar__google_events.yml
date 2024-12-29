@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: google_calendar
+    description: ""
+    database: scrum-community-raw
+    tables:
+      - name: access_control_list
+        description: ""
+      - name: allowed_conference_solution_type
+        description: ""
+      - name: attendee
+        description: ""
+      - name: calendar_list
+        description: ""
+      - name: conference_data_entrypoint
+        description: ""
+      - name: default_reminder
+        description: ""
+      - name: event
+        description: ""
+      - name: event_private_property
+        description: ""
+      - name: notification_setting
+        description: ""
+      - name: recurrence
+        description: ""
+      - name: reminder_override
+        description: ""
+      - name: setting
+        description: ""
