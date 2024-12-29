@@ -1,6 +1,6 @@
 {{ codegen.generate_base_model(
-     source_name='credly',
-     table_name='credly_scrum_summary_ontario',
+     source_name='google_calendar',
+     table_name='event',
      leading_commas=true
      
  ) }}
