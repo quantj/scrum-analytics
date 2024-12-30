@@ -1,5 +1,3 @@
-{{ config(materialized='view') }}
-
 WITH cte AS (
     SELECT
         summary,
